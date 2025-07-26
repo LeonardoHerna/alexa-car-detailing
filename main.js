@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     `¡Hola! Quiero reservar un servicio:\n\n👤 Nombre: ${nombre}\n📞 Teléfono: ${telefono}\n📍 Ubicación: ${ubicacion}\n🛠️ Servicio: ${servicio}\n📅 Fecha: ${fecha}\n💬 Comentario: ${comentario}`
   );
 
-  window.open(`https://wa.me/59899123456?text=${mensaje}`, '_blank');
+  window.open(`https://wa.me/59897431589?text=${mensaje}`, '_blank');
 });
 
       alert("Gracias por tu reserva. Nos contactaremos a la brevedad.");
