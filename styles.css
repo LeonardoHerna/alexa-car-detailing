@@ -33,6 +33,10 @@ header p {
   margin-top: 1rem;
 }
 
+whatsapp-btn{
+  padding-left: 20px;
+}
+
 .benefits, .services, .gallery, .testimonials, .form-section, .faq, .location {
   max-width: 1000px;
   margin: auto;
