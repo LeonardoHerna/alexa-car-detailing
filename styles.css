@@ -69,6 +69,49 @@ whatsapp-btn{
   margin-bottom: 1rem;
 }
 
+
+.gallery h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.999%;
+}
+
+.gallery-item {
+  border: 1px solid #ccc;
+  margin-top: 8px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Media queries para responsividad */
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.999%;
+    margin-top: 6px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+
 .testimonials blockquote {
   background: #f0f0f0;
   padding: 1rem;
