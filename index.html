@@ -66,26 +66,25 @@
     <iframe src="https://www.google.com/maps/embed?..." width="100%" height="300" style="border:0;" allowfullscreen></iframe>
   </section>
 
-  <section class="form-section" id="form">
-    <h2>Reservá tu servicio</h2>
-    <form id="reserva-form">
-      <input type="text" placeholder="Nombre completo" required>
-      <input type="tel" placeholder="Teléfono" required>
-      <input type="text" placeholder="Ubicación (barrio o ciudad)" required>
-      <select required>
-        <option value="">Servicio requerido</option>
-        <option>Lavado exterior/interior</option>
-        <option>Limpieza de tapizados</option>
-        <option>Detailing completo</option>
-        <option>Tratamiento cerámico</option>
-      </select>
-      <input type="date" required>
-      <textarea placeholder="Comentarios adicionales"></textarea>
-      <button type="submit">Reservar ahora</button>
-    </form>
-    <p>¿Preferís coordinar directo? <a href="https://wa.me/59897431589" target="_blank">Hablá con nosotros por WhatsApp</a>.</p>
-
-  </section>
+<section class="form-section" id="form">
+  <h2>Reservá tu servicio</h2>
+  <form id="reserva-form">
+    <input type="text" name="nombre" placeholder="Nombre completo" required>
+    <input type="tel" name="telefono" placeholder="Teléfono" required>
+    <input type="text" name="ubicacion" placeholder="Ubicación (barrio o ciudad)" required>
+    <select name="servicio" required>
+      <option value="">Servicio requerido</option>
+      <option>Lavado exterior/interior</option>
+      <option>Limpieza de tapizados</option>
+      <option>Detailing completo</option>
+      <option>Tratamiento cerámico</option>
+    </select>
+    <input type="date" name="fecha" required>
+    <textarea name="comentario" placeholder="Comentarios adicionales"></textarea>
+    <button type="submit">Reservar ahora</button>
+  </form>
+  <p>¿Preferís coordinar directo? <a href="https://wa.me/59897431589" target="_blank">Hablá con nosotros por WhatsApp</a>.</p>
+</section>
 
   <section class="faq">
     <h2>Preguntas Frecuentes</h2>
