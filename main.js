@@ -5,22 +5,23 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const nombre = form.querySelector('input[type="text"]').value;
-    const telefono = form.querySelector('input[type="tel"]').value;
-    const ubicacion = form.querySelector('input[placeholder*="Ubicación"]').value;
-    const servicio = form.querySelector('select').value;
-    const fecha = form.querySelector('input[type="date"]').value;
-    const comentario = form.querySelector('textarea').value;
-
-    console.log({ nombre, telefono, ubicacion, servicio, fecha, comentario });
+    const { nombre, telefono, ubicacion, servicio, fecha, comentario } = form;
+    console.log({
+      nombre: nombre.value,
+      telefono: telefono.value,
+      ubicacion: ubicacion.value,
+      servicio: servicio.value,
+      fecha: fecha.value,
+      comentario: comentario.value
+    });
 
     const mensaje = encodeURIComponent(
-      `¡Hola! Quiero reservar un servicio:\n\n👤 Nombre: ${nombre}\n📞 Teléfono: ${telefono}\n📍 Ubicación: ${ubicacion}\n🛠️ Servicio: ${servicio}\n📅 Fecha: ${fecha}\n💬 Comentario: ${comentario}`
+      `¡Hola! Quiero reservar un servicio:\n\n` +
+      `👤 Nombre: ${nombre.value}\n📞 Teléfono: ${telefono.value}\n📍 Ubicación: ${ubicacion.value}\n` +
+      `🛠️ Servicio: ${servicio.value}\n📅 Fecha: ${fecha.value}\n💬 Comentario: ${comentario.value}`
     );
-
     const numeroWhatsApp = "59897431589";
     window.open(`https://wa.me/${numeroWhatsApp}?text=${mensaje}`, '_blank');
-
     form.reset();
   });
 });
