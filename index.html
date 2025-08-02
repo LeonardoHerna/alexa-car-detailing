@@ -122,37 +122,56 @@
 
   <!-- From section-->
 <section class="form-section" id="form">
-  <h2>Reservá tu servicio</h2>
-  <form id="reserva-form">
+  <h2 class="form-title">Reservá tu servicio</h2>
+  <form id="reserva-form" novalidate>
+    
     <div class="form-group">
-      <input type="text" name="nombre" placeholder="Nombre completo" required>
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
     </div>
+
     <div class="form-group">
-      <input type="tel" name="telefono" placeholder="Teléfono" required>
+      <label for="telefono">Teléfono</label>
+      <input type="tel" id="telefono" name="telefono" placeholder="Ej: 099123456" required>
     </div>
+
     <div class="form-group">
-      <input type="text" name="ubicacion" placeholder="Ubicación (barrio o ciudad)" required>
+      <label for="ubicacion">Ubicación</label>
+      <input type="text" id="ubicacion" name="ubicacion" placeholder="Barrio o ciudad" required>
     </div>
+
     <div class="form-group">
-      <select name="servicio" required>
-        <option value="">Servicio requerido</option>
+      <label for="servicio">Servicio requerido</label>
+      <select id="servicio" name="servicio" required>
+        <option value="">Seleccioná una opción</option>
         <option>Lavado exterior/interior</option>
         <option>Limpieza de tapizados</option>
         <option>Detailing completo</option>
         <option>Tratamiento cerámico</option>
       </select>
     </div>
+
     <div class="form-group">
-      <input type="date" name="fecha" required>
+      <label for="fecha">Fecha deseada</label>
+      <input type="date" id="fecha" name="fecha" required>
     </div>
+
     <div class="form-group">
-      <textarea name="comentario" placeholder="Comentarios adicionales"></textarea>
+      <label for="comentario">Comentarios adicionales</label>
+      <textarea id="comentario" name="comentario" rows="4" placeholder="Ej: Tipo de vehículo, horarios disponibles..."></textarea>
     </div>
+
     <div class="form-group">
-      <button type="submit"><i class="fas fa-calendar-check"></i> Reservar ahora</button>
+      <button type="submit">
+        <i class="fas fa-calendar-check"></i> Reservar ahora
+      </button>
     </div>
   </form>
-  <p>¿Preferís coordinar directo? <a href="https://wa.me/59892349408" target="_blank">Hablá con nosotros por WhatsApp</a>.</p>
+
+  <p class="contact-alt">
+    ¿Preferís coordinar directo?
+    <a href="https://wa.me/59892349408" target="_blank">Hablá con nosotros por WhatsApp</a>.
+  </p>
 </section>
 
 <!--Preguntas frecuentes-->

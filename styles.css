@@ -205,30 +205,61 @@ body {
 
 
 /* From section */
+.form-section {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  color: #f0f0f0;
+  font-family: 'Inter', sans-serif;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #ccc;
 }
 
 .form-section input,
 .form-section select,
 .form-section textarea {
-  width: 100%;
-  padding: 0.8rem;
+  width: 90%;
+  padding: 0.9rem 1rem;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #333;
+  background-color: #111;
+  color: #f0f0f0;
   font-size: 1rem;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  background-color: #1a1a1a;
-  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.form-section input::placeholder,
+.form-section textarea::placeholder {
+  color: #888;
 }
 
 .form-section input:focus,
 .form-section select:focus,
 .form-section textarea:focus {
   border-color: #28a745;
-  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+  box-shadow: 0 0 6px rgba(40, 167, 69, 0.4);
   outline: none;
 }
 
@@ -239,17 +270,57 @@ body {
   border: none;
   border-radius: 8px;
   font-size: 1.1rem;
+  font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .form-section button:hover {
   background: #218838;
+  transform: translateY(-1px);
 }
 
-.form-section button i {
-  margin-right: 0.5rem;
+.form-section button:active {
+  transform: scale(0.97);
 }
+
+.contact-alt {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #bbb;
+}
+
+.contact-alt a {
+  color: #28a745;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-alt a:hover {
+  color: #1e7e34;
+}
+
+/* Responsive para móviles */
+@media (max-width: 480px) {
+  .form-section {
+    padding: 1.5rem;
+    margin: 1.5rem;
+  }
+
+  .form-title {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
 
 /* Location */
 .location-section {
@@ -258,7 +329,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
 }
